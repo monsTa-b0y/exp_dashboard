@@ -44,7 +44,7 @@ if uploaded_file is not None:
         'Travel & Stay': ['uber', 'ola', 'rapido', 'hyderabad metro', 'brevistay'],
         'Entertainment': ['netflix', 'prime', 'hotstar', 'movie', 'cinema', 'subscription', 'apple media', 'spotify'],
         'Fuel': ['fuel', 'petrol'],
-        'Loan': ["Vatturi Paritosh"],
+        'Loan': ['Vatturi Paritosh'],
         'Investments/ Savings': ['icclgroww'],
         'Money Received': ['received from']
     }

@@ -131,27 +131,6 @@ if uploaded_file is not None:
     fig_pie_cat.update_traces(textinfo='value+label')
     st.plotly_chart(fig_pie_cat, use_container_width=True)
     
-    # Visual 3: Bar chart of expenditures by Tags
-    st.subheader("Expenditures by Tags (Bar Chart)")
-    fig_bar_tags = px.bar(tag_sum, x='Tags', y='Abs Amount', title="Bar Chart by Tags")
-    st.plotly_chart(fig_bar_tags, use_container_width=True)
-    
-    # Visual 4: Bar chart of expenditures by Category
-    st.subheader("Expenditures by Auto Category (Bar Chart)")
-    fig_bar_cat = px.bar(category_sum, x='Category', y='Abs Amount', title="Bar Chart by Auto Categories")
-    st.plotly_chart(fig_bar_cat, use_container_width=True)
-    
-    # Visual 5: Time series line chart of daily expenditures
-    st.subheader("Daily Expenditures Over Time")
-    daily_sum = exp_df.resample('D', on='Date')['Abs Amount'].sum().reset_index()
-    fig_line = px.line(daily_sum, x='Date', y='Abs Amount', title="Daily Total Expenditures")
-    st.plotly_chart(fig_line, use_container_width=True)
-    
-    # Visual 6: Scatter plot of individual transactions (all, with colors)
-    st.subheader("Individual Transactions (Scatter Plot)")
-    fig_scatter = px.scatter(df_filtered, x='Date', y='Amount', color='Category', 
-                             hover_data=['Transaction Details', 'Tags'], title="Transactions by Date and Amount")
-    st.plotly_chart(fig_scatter, use_container_width=True)
     
     # Table of top debits
     st.subheader("Top 10 Debits")

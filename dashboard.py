@@ -40,7 +40,6 @@ if uploaded_file is not None:
     categories_keywords = {
         'Food and Dining': ['swiggy', 'zomato', 'ubereats', 'heisetasse', 'restaurant', 'hotel', 'food', 'dining', 'taco bell', 'domi', 'bakers', 'coffee', 'leons', 'hang out', 'third wave', 'churrolto', 'ushodaya', 'tibbs', 'koi', 'ding dong', 'cara cara'],
         'Groceries': ['grocery', 'bigbasket', 'grofers', 'supermarket', 'milk', 'vegetables', 'blinkit', 'zepto', 'kpn', 'ushodaya'],
-        'Transfers': ['money sent'],
         'Shopping': ['amazon', 'flipkart', 'myntra', 'shopping', 'clothing', 'electronics', 'diverse retails', 'westside', 'techmash'],
         'Travel & Stay': ['uber', 'ola', 'rapido', 'hyderabad metro', 'brevistay'],
         'Entertainment': ['netflix', 'prime', 'hotstar', 'movie', 'cinema', 'subscription', 'apple media', 'spotify'],

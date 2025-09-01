@@ -38,19 +38,15 @@ if uploaded_file is not None:
     
     # Automatic categorization based on 'Transaction Details'
     categories_keywords = {
-        'Food and Dining': ['swiggy', 'zomato', 'ubereats', 'restaurant', 'hotel', 'food', 'dining', 'taco bell', 'domi', 'bakers', 'coffee', 'leons', 'hang out', 'third wave', 'churrolto', 'bundl', 'eswara hussan', 'radha', 'harnarayan', 'ushodaya', 'kpn', 'tibbs', 'koi', 's subramani', 'ding dong', 'shaik kaleem', 'siri natural', 'kk amr', 'cil amr', 'priya bojja', 'thana ram', 'rajpuri', 'yeggadi'],
-        'Groceries': ['grocery', 'bigbasket', 'grofers', 'supermarket', 'milk', 'vegetables', 'blinkit', 'ampm', 'renuka genext', 'mangu shyam', 'rajkamal kinara', 'zepto', 'kpn farm', 'radha', 'ushodaya', 'ding dong', 'shaik kaleem', 'siri natural', 'sri ganesh traders', 'shradha desai', 'bhawarlal', 'ambika jewel', 'munni', 'ankur jyoti', 'rajeshkalidas', 'md nizamuddin', 'sri ganesh kgs'],
+        'Food and Dining': ['swiggy', 'zomato', 'ubereats', 'heisetasse', 'restaurant', 'hotel', 'food', 'dining', 'taco bell', 'domi', 'bakers', 'coffee', 'leons', 'hang out', 'third wave', 'churrolto', 'ushodaya', 'tibbs', 'koi', 'ding dong', 'cara cara'],
+        'Groceries': ['grocery', 'bigbasket', 'grofers', 'supermarket', 'milk', 'vegetables', 'blinkit', 'zepto', 'kpn', 'ushodaya'],
         'Transfers': ['money sent'],
-        'Shopping': ['amazon', 'flipkart', 'myntra', 'shopping', 'clothing', 'electronics', 'diverse retails', 'westside', 'techmash', 'gollapalli', 'bhagwati', 'm s ambika', 'mohammed ilyas'],
-        'Travel': ['uber', 'ola', 'taxi', 'fuel', 'petrol', 'auto', 'bus', 'train', 'metro', 'cara cara', 'brevistay', 'ambadipelli', 'sri gayathri filling', 'zruti', 'bharatpe merchant', 'vallakati'],
-        'Entertainment': ['netflix', 'prime', 'hotstar', 'movie', 'cinema', 'subscription', 'apple media', 'spotify', 'skysell', 'quantum esports', 'fnf motorsports', 'cil amr'],
-        'Bill Payments': ['electricity', 'water', 'gas', 'internet', 'phone', 'recharge', 'bill', 'hyderabad metro', 'spotify', 'apple media'],
-        'Financial Services': ['insurance', 'premium', 'loan', 'emi', 'debt', 'icclgroww', 'heisetasse'],
-        'Education': ['school', 'college', 'tuition', 'books', 'education', 'coursera'],
-        'Health and Fitness': ['gym', 'doctor', 'hospital', 'medicine', 'pharmacy', 'health', 'maxivision', 'sri balaji generic'],
-        'Services': ['salon', 'haircut', 'cosmetics', 'beauty', 'aanandchetan', 'finance with sharan', 'phonepemerchant', 'potluri', 'erukula'],
-        'Fuel': ['fuel', 'petrol', 'sri gayathri filling'],
-        'Miscellaneous': ['ankit ahirwar', 'manish rajora', 'hang out', 'quantum esports', 'phonepemerchant', 'finance with sharan', 'zruti', 'lokesh kumar', 'sanjay lepcha', 'techmash', 'john hrudaya', 'heisetasse', 'potluri', 'vallakati', 'ushodaya super market', 'rajeshkalidas', 'arvind kumar', 'tejerao', 'thumma'],
+        'Shopping': ['amazon', 'flipkart', 'myntra', 'shopping', 'clothing', 'electronics', 'diverse retails', 'westside', 'techmash'],
+        'Travel & Stay': ['uber', 'ola', 'rapido', 'hyderabad metro', 'brevistay'],
+        'Entertainment': ['netflix', 'prime', 'hotstar', 'movie', 'cinema', 'subscription', 'apple media', 'spotify'],
+        'Fuel': ['fuel', 'petrol'],
+        'Loan': ["Vatturi Paritosh"],
+        'Investments/ Savings': ['icclgroww'],
         'Money Received': ['received from']
     }
     
